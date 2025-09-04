@@ -1,0 +1,26 @@
+/* MOBILE DEBUG STYLES - Temporary test */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex !important;
+    background: red !important;
+    border: 2px solid blue !important;
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 9999 !important;
+  }
+
+  .hamburger-line {
+    background: white !important;
+  }
+}
+
+/* Force show for testing */
+.menu-toggle {
+  background: green !important;
+  border: 2px solid yellow !important;
+  position: fixed !important;
+  top: 10px !important;
+  right: 50px !important;
+  z-index: 9999 !important;
+}

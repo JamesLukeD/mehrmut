@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Debug - Mehrmut</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+
+      .debug-container {
+        max-width: 400px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .test-header {
+        background: #d00;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .debug-info {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      .test-button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      .test-button:hover {
+        background: #0056b3;
+      }
+
+      .menu-toggle-test {
+        width: 30px;
+        height: 30px;
+        background: #d00;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+        margin: 10px auto;
+      }
+
+      .hamburger-line-test {
+        width: 20px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+      }
+
+      .menu-toggle-test.active .hamburger-line-test:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .menu-toggle-test.active .hamburger-line-test:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle-test.active .hamburger-line-test:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+
+      .result {
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .success {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+
+      .error {
+        background: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="debug-container">
+      <div class="test-header">
+        <h2>🔧 Mobile Navigation Debug</h2>
+      </div>
+
+      <div class="debug-info">
+        <strong>Screen Width:</strong> <span id="screen-width"></span>px<br />
+        <strong>User Agent:</strong> <span id="user-agent"></span><br />
+        <strong>Touch Support:</strong> <span id="touch-support"></span>
+      </div>
+
+      <button class="test-button" onclick="testMainSite()">
+        Test Main Site Navigation
+      </button>
+
+      <div>
+        <h3>Hamburger Menu Test:</h3>
+        <button class="menu-toggle-test" id="testToggle">
+          <span class="hamburger-line-test"></span>
+          <span class="hamburger-line-test"></span>
+          <span class="hamburger-line-test"></span>
+        </button>
+        <div id="test-result"></div>
+      </div>
+
+      <button class="test-button" onclick="checkMainSiteElements()">
+        Check Main Site Elements
+      </button>
+
+      <div id="element-check-result"></div>
+
+      <div class="debug-info">
+        <h3>CSS Media Query Test:</h3>
+        <div id="media-query-test">Testing...</div>
+      </div>
+    </div>
+
+    <script>
+      // Update debug info
+      document.getElementById("screen-width").textContent = window.innerWidth;
+      document.getElementById("user-agent").textContent =
+        navigator.userAgent.substring(0, 50) + "...";
+      document.getElementById("touch-support").textContent =
+        "ontouchstart" in window ? "Yes" : "No";
+
+      // Test hamburger menu animation
+      document
+        .getElementById("testToggle")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          const result = document.getElementById("test-result");
+          result.innerHTML =
+            '<div class="success">Hamburger animation working!</div>';
+        });
+
+      // Test media queries
+      function testMediaQueries() {
+        const mediaTest = document.getElementById("media-query-test");
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        const isSmallMobile = window.matchMedia("(max-width: 480px)").matches;
+
+        mediaTest.innerHTML = `
+                <strong>Mobile (768px):</strong> ${isMobile ? "YES" : "NO"}<br>
+                <strong>Small Mobile (480px):</strong> ${
+                  isSmallMobile ? "YES" : "NO"
+                }
+            `;
+      }
+
+      testMediaQueries();
+      window.addEventListener("resize", testMediaQueries);
+
+      // Test main site
+      function testMainSite() {
+        window.open("index.html", "_blank");
+      }
+
+      // Check main site elements
+      function checkMainSiteElements() {
+        const result = document.getElementById("element-check-result");
+
+        // Try to access main site elements via iframe (if same origin)
+        const iframe = document.createElement("iframe");
+        iframe.src = "index.html";
+        iframe.style.display = "none";
+        document.body.appendChild(iframe);
+
+        iframe.onload = function () {
+          try {
+            const iframeDoc = iframe.contentDocument;
+            const menuToggle = iframeDoc.querySelector(".menu-toggle");
+            const topNav = iframeDoc.querySelector(".top-nav");
+
+            let checks = [];
+
+            if (menuToggle) {
+              checks.push(
+                '<div class="success">✓ Menu toggle button found</div>'
+              );
+              const display = window.getComputedStyle(menuToggle).display;
+              checks.push(
+                `<div class="debug-info">Menu toggle display: ${display}</div>`
+              );
+            } else {
+              checks.push(
+                '<div class="error">✗ Menu toggle button NOT found</div>'
+              );
+            }
+
+            if (topNav) {
+              checks.push('<div class="success">✓ Top navigation found</div>');
+            } else {
+              checks.push(
+                '<div class="error">✗ Top navigation NOT found</div>'
+              );
+            }
+
+            result.innerHTML = checks.join("");
+          } catch (error) {
+            result.innerHTML =
+              '<div class="error">Cannot access main site elements (CORS)</div>';
+          } finally {
+            document.body.removeChild(iframe);
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
