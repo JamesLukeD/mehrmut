@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Verein Mehr Mut - Netzwerk für Bildung, Arbeit und eine Welt. Projekte in Ruanda und Österreich für Bildung, Gesundheit und Infrastruktur."
+    />
+    <meta
+      name="keywords"
+      content="Verein Mehr Mut, Ruanda, Bildung, faire Arbeit, Entwicklungshilfe, Graz, Österreich"
+    />
+    <meta name="author" content="Verein Mehr Mut" />
+    <title>Verein Mehr Mut - Netzwerk für Bildung, Arbeit und eine Welt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="topbar" role="banner">
+      <div class="header-container">
+        <div class="logo-area">
+          <a href="index.html" aria-label="Zur Startseite"
+            ><img src="images/mm_logo1.jpg" alt="Verein Mehr Mut Logo"
+          /></a>
+          <div class="text-area">
+            <h1>Verein <span>Mehr Mut</span></h1>
+            <p>Netzwerk für Bildung – Arbeit und eine Welt</p>
+          </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          aria-label="Navigation öffnen/schließen"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li class="has-submenu">
+            <a href="projects/projekte.html">Projekte</a>
+            <ul class="submenu">
+              <li>
+                <a href="projects/abagore.html">Abagore - Fingerpuppen</a>
+              </li>
+              <li>
+                <a href="projects/Bildungsprojekte.html">Bildungsprojekte</a>
+              </li>
+              <li><a href="projects/Gesundheit.html">Gesundheit</a></li>
+              <li>
+                <a href="projects/Infrastrukturprojekte.html">Infrastruktur</a>
+              </li>
+              <li><a href="projects/Patenschaften.html">Patenschaften</a></li>
+              <li><a href="projects/fair-work.html">Fair Work</a></li>
+            </ul>
+          </li>
+          <li><a href="articles.html">Aktuelles</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li>
+            <a href="projects/abagore.html#fingerpuppen" class="cta-button"
+              >Fingerpuppen bestellen</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Carousel -->
+    <section
+      class="main-carousel"
+      id="main-carousel"
+      role="region"
+      aria-label="Projektbilder-Karussell"
+    >
+      <button
+        class="carousel-btn prev"
+        onclick="moveSlide(-1, 'main-carousel')"
+        aria-label="Vorheriges Bild"
+      >
+        &#10094;
+      </button>
+      <div class="carousel-images">
+        <img
+          src="images/1-1500x430.jpg"
+          alt="Verein Mehr Mut Projekt in Ruanda - Gemeinschaftsarbeit"
+          class="active"
+          loading="eager"
+        />
+        <img
+          src="images/2-1500x430.jpg"
+          alt="Bildungsprojekt - Kinder beim Lernen"
+          loading="lazy"
+        />
+        <img
+          src="images/3-1500x430.jpg"
+          alt="Faire Arbeit - Lokale Produzenten bei der Arbeit"
+          loading="lazy"
+        />
+        <img
+          src="images/4-1500x430.jpg"
+          alt="Infrastrukturprojekt - Wasserversorgung"
+          loading="lazy"
+        />
+        <img
+          src="images/5-1500x430.jpg"
+          alt="Gesundheitsprojekt - Mother and Baby Care"
+          loading="lazy"
+        />
+        <img
+          src="images/6-1500x430.jpg"
+          alt="Gemeinschaftsprojekt in Guliro"
+          loading="lazy"
+        />
+      </div>
+      <button
+        class="carousel-btn next"
+        onclick="moveSlide(1, 'main-carousel')"
+        aria-label="Nächstes Bild"
+      >
+        &#10095;
+      </button>
+    </section>
+
+    <!-- About + News Section -->
+    <main>
+      <section class="about-news-wrapper">
+        <div class="about-column">
+          <h2>Mehr Mut</h2>
+          <p>
+            <strong>Mehr Mut</strong> – ist in Graz zu Hause und entstand 1997
+            bei einer Reise nach Ruanda.
+          </p>
+          <p>
+            Als Privatinitiative gestartet, wurde im Jahr 2003 der Verein Mehr
+            Mut gegründet, der Menschen motiviert und Projekte initiiert, um
+            Lebensumstände zu verbessern.
+          </p>
+
+          <h3>Anliegen des Vereins Mehr Mut</h3>
+          <ul>
+            <li>
+              Faire Arbeit – Fairer Lohn in Entwicklungsländern (Abagore, Little
+              Fine Bakery)
+            </li>
+            <li>
+              Infrastrukturprojekte (Wasser- und Stromversorgung in Guliro,
+              Ruanda)
+            </li>
+            <li>
+              Bildungsprojekte (Kindergarten, Alphabetisierung speziell für
+              Frauen, Schulgarten für Ernährungssicherheit)
+            </li>
+            <li>
+              Immigrationsunterstützung in Österreich (Deutschkurse und
+              Unterstützung bei der Bewältigung von Herausforderungen)
+            </li>
+          </ul>
+
+          <h3 id="project" class="project-heading">Unsere Projekte</h3>
+          <div class="project-grid" role="list">
+            <div class="project-item" role="listitem">
+              <a
+                href="projects/fair-work.html"
+                class="project-card"
+                aria-describedby="fair-work-desc"
+              >
+                <img
+                  src="images/fair_prj_thumb.gif"
+                  alt="Faire Arbeit - Fingerpuppen und Bäckerei"
+                  loading="lazy"
+                />
+                <p id="fair-work-desc">Faire Arbeit</p>
+                <small>Abagore Fingerpuppen, Little Fine Bakery</small>
+              </a>
+            </div>
+            <div class="project-item" role="listitem">
+              <a
+                href="projects/Bildungsprojekte.html"
+                class="project-card"
+                aria-describedby="education-desc"
+              >
+                <img
+                  src="images/bildung_thumb.gif"
+                  alt="Bildungsprojekte - Kindergarten und Erwachsenenbildung"
+                  loading="lazy"
+                />
+                <p id="education-desc">Bildung</p>
+                <small>Kindergarten, Englischkurse, Alphabetisierung</small>
+              </a>
+            </div>
+            <div class="project-item" role="listitem">
+              <a
+                href="projects/Gesundheit.html"
+                class="project-card"
+                aria-describedby="health-desc"
+              >
+                <img
+                  src="images/gesundheit_thumb.gif"
+                  alt="Gesundheitsprojekte - Mother and Baby Care House"
+                  loading="lazy"
+                />
+                <p id="health-desc">Gesundheit</p>
+                <small>Mother and Baby Care House</small>
+              </a>
+            </div>
+            <div class="project-item" role="listitem">
+              <a
+                href="projects/Patenschaften.html"
+                class="project-card"
+                aria-describedby="sponsorship-desc"
+              >
+                <img
+                  src="images/patenschaft_thumb.gif"
+                  alt="Patenschaften und Unterstützung"
+                  loading="lazy"
+                />
+                <p id="sponsorship-desc">Patenschaften</p>
+                <small>Direkte Unterstützung für Familien</small>
+              </a>
+            </div>
+            <div class="project-item" role="listitem">
+              <a
+                href="projects/Infrastrukturprojekte.html"
+                class="project-card"
+                aria-describedby="infrastructure-desc"
+              >
+                <img
+                  src="images/infra_thumb.gif"
+                  alt="Infrastrukturprojekte - Wasser und Strom"
+                  loading="lazy"
+                />
+                <p id="infrastructure-desc">Infrastruktur</p>
+                <small>Wasser- und Stromversorgung</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- Fingerpuppen Highlight Section -->
+          <section id="fingerpuppen" class="fingerpuppen-highlight">
+            <h3>🎭 Fingerpuppen bestellen</h3>
+            <p>
+              Unterstützen Sie unsere Abagore-Frauen in Guliro durch den Kauf
+              handgefertigter Fingerpuppen!
+            </p>
+            <div class="fingerpuppen-info">
+              <div class="fingerpuppen-details">
+                <h4>Bestellung</h4>
+                <p>
+                  <strong>Email:</strong> markus.lessky@gmail.com<br />
+                  <strong>oder:</strong> marietta.l@gmx.at<br />
+                  <strong>Tel:</strong> +43-650-8655576
+                </p>
+              </div>
+              <div class="fingerpuppen-details">
+                <h4>Preise</h4>
+                <p>
+                  Je nach Größe und Aufwand:<br />
+                  <strong>€3,50 - €5,50</strong> pro Fingerpuppe
+                </p>
+              </div>
+              <div class="fingerpuppen-details">
+                <h4>Sortiment</h4>
+                <p>
+                  Über 100 verschiedene Tiere und Figuren<br />
+                  <a href="articles.html#fingerpuppen-2023" class="cta-link"
+                    >🔗 Zum aktuellen Katalog</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside
+          class="news-column"
+          role="complementary"
+          aria-labelledby="news-heading"
+        >
+          <h2 id="news-heading">Aktuelles</h2>
+          <h4>Neueste Beiträge</h4>
+          <ul>
+            <li>
+              <a href="articles.html#fingerpuppen-2023"
+                >2023 – Der neue FINGERPUPPENKATALOG</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#fingerpuppen-2021"
+                >FINGERPUPPENKATALOG 2021</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#fingerpuppen-2020"
+                >Fingerpuppenkatalog 2020</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#neue-fingerpuppen">Neue Fingerpuppen</a>
+            </li>
+            <li>
+              <a href="articles.html#mother-baby-care"
+                >Mother and Baby Care House – Neues Projekt</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#englischkurse"
+                >Interaktive Englischkurse</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#guliro-2019"
+                >Wir sind zurück in Guliro, Sommer 2019</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#magdaman"
+                >MAGDAMAN unterstützt den Verein</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Team Section-->
+
+      <section id="team" class="team-section">
+        <h2>Das Mehr Mut – Team in Österreich</h2>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="images/manuela-mendez.jpg" alt="Manuela Méndez Alegre" />
+            <h3>Manuela Méndez Alegre</h3>
+            <p class="role">Obfrau</p>
+            <p class="bio">
+              … die Frau die alles macht, lernt und sich überall einmischt!
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/proteus.jpg" alt="Protais" />
+            <h3>Protais</h3>
+            <p class="role">Projektmanager in Guliro</p>
+            <p class="bio">
+              … der Mann mit dem 100 PS Motor, mit der Kraft und Stärke einer
+              „steirischen Eiche" – bringt dies in den Club ein.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/markus-lessky.jpg" alt="Markus Lessky" />
+            <h3>Markus Leßky</h3>
+            <p class="role">Master Mind für jede Herausforderung</p>
+            <p class="bio">… der Mann der Tat.</p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/marietta_square.jpg" alt="Marietta Leßky" />
+            <h3>Marietta Leßky</h3>
+            <p class="role">
+              Fundraising, Distribution, Organisation von Team und Waren
+            </p>
+            <p class="bio">… die starke Frau im Hintergrund.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team-ruanda" class="team-section">
+        <h2>Das Mehr Mut – Team in Ruanda</h2>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="images/mandela.gif" alt="Mandela Regis" />
+            <h3>Mandela Regis</h3>
+            <p class="role">Koordinator aller Projekte in Guliro</p>
+            <p class="bio">
+              … der Mann, der vor Ort den Überblick hat und immer erreichbar
+              ist.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/laetitia.jpg" alt="Lætitia Uyisenga" />
+            <h3>Lætitia Uyisenga</h3>
+            <p class="role">Projektleiterin Fingerpuppenproduktion (Abagore)</p>
+            <p class="bio">
+              … unsere Projektmama, die weiß wie alles läuft und überall
+              mitarbeitet.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/Maske-400-400_valentine.png"
+              alt="Valentine Kwizera"
+            />
+            <h3>Valentine Kwizera</h3>
+            <p class="role">Projektleiterin Mother and Baby Care House</p>
+            <p class="bio">
+              … kümmert sich liebevoll um Mütter und ihre Babies und ist
+              Ansprechpartnerin für Gesundheitsfragen, insbesondere zu Hygiene
+              und Ernährung.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="images/Maske-400-400_olivier.png"
+              alt="Olivier Habumukiza"
+            />
+            <h3>Olivier Habumukiza</h3>
+            <p class="role">Projektleiter Kindergarten</p>
+            <p class="bio">
+              … ein ruhiger Mann, der den Kindergarten gewissenhaft leitet, alle
+              Materialien organisiert, Elterntreffen organisiert und liebevoll
+              die Kinder unterrichtet.
+            </p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/germain.jpg" alt="Germain Ugirabagabo" />
+            <h3>Germain Ugirabagabo</h3>
+            <p class="role">Projektleiter „Little Fine Bakery“</p>
+            <p class="bio">
+              … steht um 4 Uhr in der Backstube, um die frische Backware zu
+              kontrollieren, plant die nächste Produktion, kümmert sich um die
+              Fahrradauslieferung und was sonst alles in der Bäckerei anfällt.
+            </p>
+          </div>
+        </div>
+
+        <hr class="team-divider" />
+        <p class="team-thankyou">
+          Und <strong>DANKE</strong> an die vielen, vielen Freund*innen, die
+          helfen und mitmachen, wenn wir sie brauchen!
+        </p>
+      </section>
+
+      <!-- Support -->
+
+      <section id="support" class="support-section">
+        <div class="support-box">
+          <h2>So können Sie uns unterstützen</h2>
+          <div class="support-columns">
+            <div class="support-block">
+              <h3>💖 Mit einer Geldspende</h3>
+              <p><strong>Spendenkonto:</strong> Verein Mehr Mut</p>
+              <p><strong>IBAN:</strong> AT611200051268287701</p>
+              <p><strong>BIC:</strong> BKAUATWW</p>
+            </div>
+
+            <div class="support-block">
+              <h3>🎁 Mit Sachspenden</h3>
+              <ul>
+                <li>👕 Warme Kinderkleidung (3–6 Jahre)</li>
+                <li>🧸 Spielsachen (z. B. Puzzle, Matchbox-Autos)</li>
+                <li>🎨 Malsachen & Bastelmaterial</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-sponsors">
+        <button class="carousel-btn prev" onclick="moveSponsor(-1)">
+          &#10094;
+        </button>
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="sponsorTrack">
+            <img src="sponsors/1_fair-styria.jpg" alt="Sponsor 1" />
+            <img src="sponsors/2_karner.jpg" alt="Sponsor 2" />
+            <img src="sponsors/5_holding-graz.jpg" alt="Sponsor 3" />
+            <img src="sponsors/7_kotanyi.jpg" alt="Sponsor 4" />
+            <img
+              src="sponsors/rote_falken_oberc3b6sterreich.jpg"
+              alt="Sponsor 5"
+            />
+            <img src="sponsors/seacon.jpg" alt="Sponsor 6" />
+            <img src="sponsors/sorger.png" alt="Sponsor 7" />
+          </div>
+        </div>
+        <button class="carousel-btn next" onclick="moveSponsor(1)">
+          &#10095;
+        </button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-columns">
+        <div>
+          <h3>Interessante Links</h3>
+          <ul>
+            <li>
+              <a
+                href="https://kindergruppe-mandala.at"
+                target="_blank"
+                rel="noopener"
+                >Kindergruppe Mandala</a
+              >
+            </li>
+            <li><a href="articles.html#anna-ruanda">Anna in Ruanda</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Aktuelles</h3>
+          <ul>
+            <li>
+              <a href="articles.html#fingerpuppen-2023"
+                >2023 – Der neue FINGERPUPPENKATALOG</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#fingerpuppen-2021"
+                >FINGERPUPPENKATALOG 2021</a
+              >
+            </li>
+            <li>
+              <a href="articles.html#fingerpuppen-2020"
+                >Fingerpuppenkatalog 2020</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Spenden</h3>
+          <p><strong>Verein Mehr Mut</strong></p>
+          <p>
+            Bank Austria Creditanstalt<br />
+            Kontonr.: 5 126 828 7701<br />
+            BLZ: 12000<br />
+            IBAN: AT611200051268287701<br />
+            BIC: BKAUATWW
+          </p>
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <p><strong>Verein Mehr Mut</strong></p>
+          <p>
+            Manuela Méndez Alegre (Obfrau)<br />
+            Pulverturmstrasse 14a<br />
+            8053 Graz<br />
+            Telefon: +43 (0) 664 39 36 003<br />
+            Email: manuela-alegre@gmx.at
+          </p>
+        </div>
+      </div>
+
+      <p>&copy; 2024 Verein Mehr Mut. Alle Rechte vorbehalten.</p>
+    </footer>
+
+      <script src="scripts_clean.js"></script>
+  </body>
+</html>

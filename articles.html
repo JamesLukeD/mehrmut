@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aktuelles - Verein Mehr Mut</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="topbar" role="banner">
+      <div class="header-container">
+        <div class="logo-area">
+          <a href="index.html" aria-label="Zur Startseite"
+            ><img src="images/mm_logo1.jpg" alt="Verein Mehr Mut Logo"
+          /></a>
+          <div class="text-area">
+            <h1>Verein <span>Mehr Mut</span></h1>
+            <p>Netzwerk für Bildung – Arbeit und eine Welt</p>
+          </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          aria-label="Navigation öffnen/schließen"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-submenu">
+            <a href="projects/projekte.html">Projekte</a>
+            <ul class="submenu">
+              <li>
+                <a href="projects/abagore.html">Abagore - Fingerpuppen</a>
+              </li>
+              <li>
+                <a href="projects/Bildungsprojekte.html">Bildungsprojekte</a>
+              </li>
+              <li><a href="projects/Gesundheit.html">Gesundheit</a></li>
+              <li>
+                <a href="projects/Infrastrukturprojekte.html">Infrastruktur</a>
+              </li>
+              <li><a href="projects/Patenschaften.html">Patenschaften</a></li>
+              <li><a href="projects/fair-work.html">Fair Work</a></li>
+            </ul>
+          </li>
+          <li><a href="articles.html" class="active">Aktuelles</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li>
+            <a href="projects/abagore.html#fingerpuppen" class="cta-button"
+              >Fingerpuppen bestellen</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Articles Hero Section -->
+    <section class="articles-hero">
+      <div class="container">
+        <div class="articles-header">
+          <h1>Aktuelles</h1>
+          <p class="articles-subtitle">Neueste Artikel, Projekte und Updates vom Verein Mehr Mut</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Overview -->
+    <main class="articles-overview">
+      <div class="container">
+        <div class="articles-preview">
+          <!-- Featured Article -->
+          <article class="featured-article">
+            <div class="article-featured-image">
+              <img
+                src="articles/images/katalog.png"
+                alt="Fingerpuppenkatalog 2023"
+              />
+            </div>
+            <div class="article-content">
+              <h2>
+                <a href="articles/articles.html"
+                  >2023 – Der neue FINGERPUPPENKATALOG</a
+                >
+              </h2>
+              <p class="article-date">24. April 2023</p>
+              <p>
+                Hier findest du den neuen Fingerpuppenkatalog. Dieses Jahr haben
+                wir die Preise dem Arbeits- und Materialaufwand angepasst...
+              </p>
+              <a href="articles/articles.html" class="read-more-btn"
+                >Alle Artikel lesen →</a
+              >
+            </div>
+          </article>
+
+        <!-- Recent Articles Preview -->
+        <div class="recent-articles">
+          <h3>Weitere aktuelle Artikel</h3>
+          <ul class="articles-list-preview">
+            <li>
+              <a href="articles/articles.html">FINGERPUPPENKATALOG 2021</a>
+              <span class="date">16. November 2021</span>
+            </li>
+            <li>
+              <a href="articles/articles.html"
+                >Mother and Baby Care House – Das neue Projekt</a
+              >
+              <span class="date">29. Juli 2019</span>
+            </li>
+            <li>
+              <a href="articles/articles.html"
+                >Interaktive Englischkurse in Guliro</a
+              >
+              <span class="date">25. Juli 2019</span>
+            </li>
+            <li>
+              <a href="articles/articles.html">Zurück in Guliro, Sommer 2019</a>
+              <span class="date">11. Juli 2019</span>
+            </li>
+            <li>
+              <a href="articles/articles.html"
+                >MAGDAMAN unterstützt den Verein</a
+              >
+              <span class="date">15. Mai 2019</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="articles-cta">
+        <h3>Alle Artikel entdecken</h3>
+        <p>Erfahren Sie mehr über unsere Arbeit und aktuellen Projekte</p>
+        <a href="articles/articles.html" class="btn btn-primary"
+          >Zu allen Artikeln</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      style="
+        text-align: center;
+        margin-top: 4rem;
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+        color: #777;
+      "
+    >
+      <p>&copy; 2024 Verein Mehr Mut. Alle Rechte vorbehalten.</p>
+    </footer>
+
+      <script src="scripts_clean.js"></script>
+  </body>
+</html>

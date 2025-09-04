@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abagore Fingerpuppen - Verein Mehr Mut</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="topbar" role="banner">
+      <div class="header-container">
+        <div class="logo-area">
+          <a href="../index.html" aria-label="Zur Startseite"
+            ><img src="../images/mm_logo1.jpg" alt="Verein Mehr Mut Logo"
+          /></a>
+          <div class="text-area">
+            <h1>Verein <span>Mehr Mut</span></h1>
+            <p>Netzwerk für Bildung – Arbeit und eine Welt</p>
+          </div>
+        </div>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          aria-label="Navigation öffnen/schließen"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li class="has-submenu">
+            <a href="projekte.html">Projekte</a>
+            <ul class="submenu">
+              <li><a href="abagore.html">Abagore - Fingerpuppen</a></li>
+              <li><a href="Bildungsprojekte.html">Bildungsprojekte</a></li>
+              <li><a href="Gesundheit.html">Gesundheit</a></li>
+              <li><a href="Infrastrukturprojekte.html">Infrastruktur</a></li>
+              <li><a href="Patenschaften.html">Patenschaften</a></li>
+              <li><a href="fair-work.html">Fair Work</a></li>
+            </ul>
+          </li>
+          <li><a href="../articles.html">Aktuelles</a></li>
+          <li><a href="../contact.html">Kontakt</a></li>
+          <li>
+            <a href="abagore.html#fingerpuppen" class="cta-button"
+              >Fingerpuppen bestellen</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="article-content">
+      <div class="container">
+        <header class="article-header">
+          <h1>Abagore - Fingerpuppenproduktion</h1>
+          <p class="article-meta">Unser nachhaltiges Frauenprojekt in Guliro</p>
+        </header>
+
+        <div class="article-body">
+          <div class="content-section">
+            <img
+              src="../images/fingerpueppchen.gif"
+              alt="Handgemachte Fingerpuppen"
+              class="featured-image"
+            />
+
+            <h2>Das Abagore-Projekt</h2>
+            <p>
+              „Abagore" bedeutet auf Kinyarwanda „Frauen" und ist der Name
+              unseres wichtigsten nachhaltigen Projekts in Guliro. Seit vielen
+              Jahren produzieren Frauen aus der Region handgemachte
+              Fingerpuppen, die wir in Österreich verkaufen.
+            </p>
+
+            <p>
+              Dieses Projekt bietet den Frauen nicht nur ein regelmäßiges
+              Einkommen, sondern auch die Möglichkeit, ihre traditionellen
+              Handwerksfähigkeiten zu nutzen und weiterzugeben. Jede Fingerpuppe
+              wird liebevoll von Hand gefertigt und ist ein Unikat.
+            </p>
+
+            <h2>Unsere Fingerpuppen-Kollektion</h2>
+            <p>
+              Unsere Fingerpuppen sind nicht nur wunderschöne Spielsachen für
+              Kinder, sondern auch perfekte Geschenke für Erwachsene. Sie eignen
+              sich hervorragend für:
+            </p>
+            <ul>
+              <li>Puppentheater und Geschichtenerzählen</li>
+              <li>Pädagogische Zwecke in Kindergärten und Schulen</li>
+              <li>Sammlerobjekte und Dekoration</li>
+              <li>Sinnvolle Geschenke mit sozialer Wirkung</li>
+            </ul>
+
+            <div id="fingerpuppen" class="fingerpuppen-catalog">
+              <div class="catalog-header">
+                <h2>🎭 Fingerpuppen Katalog</h2>
+                <p class="catalog-subtitle">
+                  Handgemachte Unikate aus Guliro, Ruanda
+                </p>
+              </div>
+
+              <div class="product-showcase">
+                <div class="product-card featured">
+                  <div class="product-image">
+                    <img
+                      src="../images/fingerpueppchen.gif"
+                      alt="Fingerpuppen Sammlung"
+                    />
+                    <div class="product-badge">Bestseller</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Einzelfiguren</h3>
+                    <div class="price-display">
+                      <span class="price">€ 3,50</span>
+                      <span class="price-label">pro Stück</span>
+                    </div>
+                    <ul class="features">
+                      <li>🎭 Verschiedene Charaktere verfügbar</li>
+                      <li>🎨 100% handgemacht in Guliro</li>
+                      <li>🌟 Jede Puppe ist ein Unikat</li>
+                      <li>🎁 Perfekt als Geschenk</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="../images/bag.gif" alt="Fingerpuppen Familie" />
+                    <div class="product-badge special">Familie</div>
+                  </div>
+                  <div class="product-info">
+                    <h3>Familien-Sets</h3>
+                    <div class="price-display">
+                      <span class="price">€ 5,50</span>
+                      <span class="price-label">pro Set</span>
+                    </div>
+                    <ul class="features">
+                      <li>👨‍👩‍👧‍👦 Komplette Familien-Sets</li>
+                      <li>📚 Ideal für Puppentheater</li>
+                      <li>🎭 Zusammengehörige Charaktere</li>
+                      <li>🎁 Perfekte Geschenksets</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-section">
+                <div class="order-header">
+                  <h3>🛒 Jetzt bestellen</h3>
+                  <p>Einfach, schnell und direkt bei uns</p>
+                </div>
+
+                <div class="contact-methods">
+                  <div class="contact-card primary">
+                    <div class="contact-icon">📧</div>
+                    <h4>E-Mail Bestellung</h4>
+                    <p class="contact-info">
+                      <a href="mailto:info@mehrmut.com">info@mehrmut.com</a>
+                    </p>
+                    <p class="contact-description">
+                      Senden Sie uns Ihre Wunschliste - wir antworten innerhalb
+                      von 24 Stunden!
+                    </p>
+                    <a href="mailto:info@mehrmut.com" class="order-btn"
+                      >E-Mail senden</a
+                    >
+                  </div>
+
+                  <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h4>Telefonische Bestellung</h4>
+                    <p class="contact-info">
+                      <a href="tel:+4366488447753">+43 664 88447753</a>
+                    </p>
+                    <p class="contact-description">
+                      Persönliche Beratung und individuelle Wünsche - rufen Sie
+                      uns an!
+                    </p>
+                    <a href="tel:+4366488447753" class="order-btn"
+                      >Jetzt anrufen</a
+                    >
+                  </div>
+                </div>
+
+                <div class="order-steps">
+                  <h4>✨ So einfach funktioniert Ihre Bestellung:</h4>
+                  <div class="steps-grid">
+                    <div class="step">
+                      <div class="step-number">1</div>
+                      <p>Kontaktieren Sie uns per E-Mail oder Telefon</p>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">2</div>
+                      <p>Teilen Sie uns Ihre Wünsche mit</p>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">3</div>
+                      <p>Sie erhalten eine Rechnung von uns</p>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">4</div>
+                      <p>Nach Zahlung versenden wir Ihre Puppen</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="shipping-details">
+                  <div class="shipping-card">
+                    <h4>🚚 Versand & Lieferung</h4>
+                    <div class="shipping-info-grid">
+                      <div class="shipping-item">
+                        <strong>Versandgebiete:</strong>
+                        <p>Österreich & Deutschland</p>
+                      </div>
+                      <div class="shipping-item">
+                        <strong>Versandkosten:</strong>
+                        <p>Individuell je nach Bestellmenge</p>
+                      </div>
+                      <div class="shipping-item">
+                        <strong>Lieferzeit:</strong>
+                        <p>2-5 Werktage nach Zahlungseingang</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>Soziale Wirkung</h2>
+            <p>Mit jedem Kauf einer Fingerpuppe unterstützen Sie direkt:</p>
+            <ul>
+              <li>Das Einkommen der Frauen in Guliro</li>
+              <li>Die Erhaltung traditioneller Handwerkskunst</li>
+              <li>Weitere Projekte des Vereins Mehr Mut</li>
+              <li>Die nachhaltige Entwicklung der Region</li>
+            </ul>
+
+            <div class="project-leader">
+              <h2>Projektleiterin</h2>
+              <div class="leader-profile">
+                <img src="../images/laetitia.jpg" alt="Lætitia Uyisenga" />
+                <div class="leader-info">
+                  <h3>Lætitia Uyisenga</h3>
+                  <p class="role">Projektleiterin Fingerpuppenproduktion</p>
+                  <p>
+                    Lætitia ist unsere „Projektmama", die vor Ort die
+                    Fingerpuppenproduktion koordiniert und für die Qualität der
+                    Arbeit sorgt. Sie kennt alle Frauen persönlich und sorgt
+                    dafür, dass die Arbeit fair verteilt wird.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-navigation">
+          <a href="../index.html" class="nav-button">← Zurück zur Startseite</a>
+          <a href="Bildungsprojekte.html" class="nav-button"
+            >Bildungsprojekte →</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Kontakt</h3>
+            <p>Verein Mehr Mut</p>
+            <p>für Kinder in Ruanda</p>
+            <p>
+              E-Mail: <a href="mailto:info@mehrmut.com">info@mehrmut.com</a>
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Spendenkonto</h3>
+            <p>IBAN: AT611200051268287701</p>
+            <p>BIC: BKAUATWW</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Verein Mehr Mut. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Navigation Toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const topNav = document.querySelector(".top-nav");
+
+        if (menuToggle && topNav) {
+          menuToggle.addEventListener("click", function () {
+            topNav.classList.toggle("open");
+            const isOpen = topNav.classList.contains("open");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+            // Animate hamburger to X
+            menuToggle.classList.toggle("active", isOpen);
+
+            if (isOpen) {
+              document.body.style.overflow = "hidden";
+            } else {
+              document.body.style.overflow = "";
+            }
+          });
+
+          document.addEventListener("click", function (e) {
+            if (!menuToggle.contains(e.target) && !topNav.contains(e.target)) {
+              topNav.classList.remove("open");
+              menuToggle.classList.remove("active");
+              menuToggle.setAttribute("aria-expanded", "false");
+              document.body.style.overflow = "";
+            }
+          });
+
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && topNav.classList.contains("open")) {
+              topNav.classList.remove("open");
+              menuToggle.classList.remove("active");
+              menuToggle.setAttribute("aria-expanded", "false");
+              document.body.style.overflow = "";
+              menuToggle.focus();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

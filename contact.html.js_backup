@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verein Mehr Mut</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="topbar">
+      <div class="header-container">
+        <div class="logo-area">
+          <a href="index.html"
+            ><img src="images/mm_logo1.jpg" alt="Verein Mehr Mut Logo"
+          /></a>
+          <div class="text-area">
+            <h1>Verein <span>Mehr Mut</span></h1>
+            <p>Netzwerk für Bildung – Arbeit und eine Welt</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button
+        class="menu-toggle"
+        aria-label="Navigation öffnen/schließen"
+        aria-expanded="false"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="projects/projekte.html">Projekte</a>
+          <ul class="submenu">
+            <li><a href="projects/abagore.html">Abagore - Fingerpuppen</a></li>
+            <li><a href="projects/Bildungsprojekte.html">Bildungsprojekte</a></li>
+            <li><a href="projects/Gesundheit.html">Gesundheit</a></li>
+            <li><a href="projects/Infrastrukturprojekte.html">Infrastruktur</a></li>
+            <li><a href="projects/Patenschaften.html">Patenschaften</a></li>
+            <li><a href="projects/fair-work.html">Fair Work</a></li>
+          </ul>
+        </li>
+        <li><a href="articles.html">Aktuelles</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+        <li>
+          <a href="projects/abagore.html#fingerpuppen" class="cta-button"
+            >Fingerpuppen bestellen</a
+          >
+        </li>
+      </ul>
+    </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-header">
+          <h1>Kontakt</h1>
+          <p class="contact-subtitle">Nehmen Sie Kontakt mit uns auf - wir freuen uns auf Ihre Nachricht!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <main class="contact-content">
+      <div class="container">
+        <div class="contact-info-grid">
+          <div class="contact-card">
+            <h2>Kontakt Information</h2>
+            <div class="contact-details">
+              <h3>Verein Mehr Mut</h3>
+              <div class="contact-item">
+                <strong>Obfrau:</strong> Manuela Méndez Alegre
+              </div>
+              <div class="contact-item">
+                <strong>Adresse:</strong><br>
+                Pulverturmstrasse 14a<br>
+                8053 Graz, Österreich
+              </div>
+              <div class="contact-item">
+                <strong>Telefon:</strong>
+                <a href="tel:+436643936003">+43 (0) 664 39 36 003</a>
+              </div>
+              <div class="contact-item">
+                <strong>E-Mail:</strong>
+                <a href="mailto:manuela-alegre@gmx.at">manuela-alegre@gmx.at</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h2>Unsere Mission</h2>
+            <p>
+              Der Verein Mehr Mut setzt sich für faire Arbeit, Bildung und nachhaltige Entwicklung ein. 
+              Wir unterstützen Projekte in Ruanda und helfen Menschen dabei, ihre Lebensumstände zu verbessern.
+            </p>
+            <div class="contact-cta">
+              <a href="index.html" class="cta-button">← Zurück zur Startseite</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Support -->
+
+    <section id="support" class="support-section">
+      <div class="support-box">
+        <h2>So können Sie uns unterstützen</h2>
+        <div class="support-columns">
+          <div class="support-block">
+            <h3>💖 Mit einer Geldspende</h3>
+            <p><strong>Spendenkonto:</strong> Verein Mehr Mut</p>
+            <p><strong>IBAN:</strong> AT611200051268287701</p>
+            <p><strong>BIC:</strong> BKAUATWW</p>
+          </div>
+
+          <div class="support-block">
+            <h3>🎁 Mit Sachspenden</h3>
+            <ul>
+              <li>👕 Warme Kinderkleidung (3–6 Jahre)</li>
+              <li>🧸 Spielsachen (z. B. Puzzle, Matchbox-Autos)</li>
+              <li>🎨 Malsachen & Bastelmaterial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-columns">
+        <div>
+          <h3>Interessante Links</h3>
+          <ul>
+            <li><a href="#">Kindergruppe Mandala</a></li>
+            <li><a href="#">Anna in Ruanda</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Aktuelles</h3>
+          <ul>
+            <li><a href="#">2023 – Der neue FINGERPUPPENKATALOG</a></li>
+            <li><a href="#">FINGERPUPPENKATALOG 2021</a></li>
+            <li><a href="#">Fingerpuppenkatalog 2020</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Spenden</h3>
+          <p><strong>Verein Mehr Mut</strong></p>
+          <p>
+            Bank Austria Creditanstalt<br />
+            Kontonr.: 5 126 828 7701<br />
+            BLZ: 12000<br />
+            IBAN: AT611200051268287701<br />
+            BIC: BKAUATWW
+          </p>
+        </div>
+        <div>
+          <h3>Kontakt</h3>
+          <p><strong>Verein Mehr Mut</strong></p>
+          <p>
+            Manuela Méndez Alegre (Obfrau)<br />
+            Pulverturmstrasse 14a<br />
+            8053 Graz<br />
+            Telefon: +43 (0) 664 39 36 003<br />
+            Email: manuela-alegre@gmx.at
+          </p>
+        </div>
+      </div>
+
+      <p>&copy; 2024 Verein Mehr Mut. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const topNav = document.querySelector(".top-nav");
+
+        if (menuToggle && topNav) {
+          menuToggle.addEventListener("click", function () {
+            topNav.classList.toggle("open");
+            menuToggle.classList.toggle("active");
+
+            // Update aria-expanded for accessibility
+            const isExpanded = topNav.classList.contains("open");
+            menuToggle.setAttribute("aria-expanded", isExpanded);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
