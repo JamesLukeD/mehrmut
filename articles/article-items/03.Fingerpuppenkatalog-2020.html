@@ -7,50 +7,61 @@
     <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
-    <!-- Header with Navigation -->
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="logo">
-            <img src="../../images/mm_logo1.jpg" alt="Mehr Mut Logo" />
+    <!-- Header -->
+    <header class="topbar" role="banner">
+      <div class="header-container">
+        <div class="logo-area">
+          <a href="../../index.html" aria-label="Zur Startseite"
+            ><img src="../../images/mm_logo1.jpg" alt="Verein Mehr Mut Logo"
+          /></a>
+          <div class="text-area">
+            <h1>Verein <span>Mehr Mut</span></h1>
+            <p>Netzwerk für Bildung – Arbeit und eine Welt</p>
           </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="../../index.html">Startseite</a></li>
-            <li>
-              <a href="../../projects/projekte.html">Projekte</a>
-              <ul class="submenu">
-                <li>
-                  <a href="../../projects/Bildungsprojekte.html">Bildung</a>
-                </li>
-                <li><a href="../../projects/Gesundheit.html">Gesundheit</a></li>
-                <li>
-                  <a href="../../projects/Infrastrukturprojekte.html"
-                    >Infrastruktur</a
-                  >
-                </li>
-                <li>
-                  <a href="../../projects/Patenschaften.html">Patenschaften</a>
-                </li>
-                <li><a href="../../projects/abagore.html">Abagore</a></li>
-                <li>
-                  <a href="../../projects/mother.html">Mutter-Kind-Zentrum</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="../../articles.html" class="active">Aktuelles</a></li>
-            <li><a href="../../contact.html">Kontakt</a></li>
-            <li>
-              <a
-                href="../../projects/abagore.html#fingerpuppen"
-                class="cta-button"
-                >Fingerpuppen bestellen</a
-              >
-            </li>
-          </ul>
-        </nav>
+
+        <!-- Hamburger Button -->
+        <button
+          class="menu-toggle"
+          aria-label="Navigation öffnen/schließen"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
+
+      <nav class="top-nav" role="navigation" aria-label="Hauptnavigation">
+        <ul class="nav-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li class="has-submenu">
+            <a href="../../projects/projekte.html">Projekte</a>
+            <ul class="submenu">
+              <li>
+                <a href="../../projects/abagore.html">Abagore - Fingerpuppen</a>
+              </li>
+              <li>
+                <a href="../../projects/Bildungsprojekte.html">Bildungsprojekte</a>
+              </li>
+              <li><a href="../../projects/Gesundheit.html">Gesundheit</a></li>
+              <li>
+                <a href="../../projects/Infrastrukturprojekte.html">Infrastruktur</a>
+              </li>
+              <li><a href="../../projects/Patenschaften.html">Patenschaften</a></li>
+              <li><a href="../../projects/fair-work.html">Fair Work</a></li>
+              <li><a href="../../projects/mother.html">Mutter-Kind-Zentrum</a></li>
+            </ul>
+          </li>
+          <li><a href="../../articles.html" class="active">Aktuelles</a></li>
+          <li><a href="../../contact.html">Kontakt</a></li>
+          <li>
+            <a href="../../projects/abagore.html#fingerpuppen" class="cta-button"
+              >Fingerpuppen bestellen</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Article Content -->
